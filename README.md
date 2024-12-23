@@ -78,16 +78,18 @@ pola lub wciskając klawisze strzałek `↑`-`↓` na klawiaturze.
 ### Uruchomienie
 
 Moduł można uruchomić samodzielnie w trybie kalkulatora. W tym celu należy uruchomić
-odpowiedni skrót z pulpitu albo plik `mury.exe` lub `beton.exe` z lokalizacji instalacji
-(np. *C:\ABC6\EXE*). Plik `mury.exe` uruchamia kalkulator do projektowania ścian
-murowych, natomiast `beton.exe` uruchamia kalkulator do projektowania ścian betonowych.
+odpowiedni skrót z pulpitu, alternatywnie plik `mury.exe` lub `beton.exe`
+z lokalizacji instalacji (np. *C:\ABC6\EXE*). Plik `mury.exe` uruchamia kalkulator
+do projektowania ścian murowych, natomiast `beton.exe` uruchamia kalkulator do
+projektowania ścian betonowych.
 **Pierwsze uruchomienie należy wykonać z poziomu programu ABC.**
 
-W programach **ABC** dla podpór typu `Ściana` można zaprojektować ścianę murową lub
-betonową. Odpowiedni moduł uruchamia się w zależności od rodzaju podpory. W wynikach
-zadania w menu `Wymiar` dostępna jest opcja `Projektowanie ściany`. W przypadku, gdy ta
-możliwość nie jest dostępna trzeba zaktualizować program **ABC** do wersji 6.24, włączyć
-pełny zakres menu przyciskiem "M" lub wybrać z menu opcję `Pokaż → Wybór wymiarowania`.
+W programach **ABC** dla podpór typu `Ściana` można zaprojektować ścianę murową
+lub betonową. Odpowiedni moduł uruchamia się w zależności od rodzaju podpory.
+W wynikach zadania w menu `Wymiar` dostępna jest opcja `Projektowanie ściany`.
+W przypadku, gdy ta możliwość nie jest dostępna trzeba zaktualizować program
+**ABC** do wersji 6.24, włączyć pełny zakres menu przyciskiem "M" lub wybrać
+z menu opcję `Pokaż → Wybór wymiarowania`.
 
 ![image](https://github.com/user-attachments/assets/8eff3520-747e-426e-b02a-8e70e0427817)
 
@@ -119,8 +121,8 @@ czy `Swobodna`. Wybór ten ma wpływ na wysokość efektywną ściany i wartośc
 gnących (schemat statyczny belki w przypadku braku usztywnień lub płyty).
 Dodatkowo, w przypadku ścian murowych, wybór ten wpływa na stan graniczny
 użytkowalności (sprawdzenie ograniczenia wysokości i długości ściany w zależności
-od jej grubości zgodnie z załącznikiem F normy *PN-EN 1996-1-1*). Dla murów dostępna
-opcja `Ściana obciążona siłą skupioną` pozwala na sprawdzenie wybranego obszaru
+od jej grubości zgodnie z załącznikiem F normy *PN-EN 1996-1-1*).
+Opcja `Ściana obciążona siłą skupioną` pozwala na sprawdzenie wybranego obszaru
 ściany pod obciążeniem skupionym, np. w miejscu oparcia belki.
 
 ### Projektowanie
@@ -216,4 +218,4 @@ lub serwis [GitHub](https://github.com/pkpkbud/sciany/issues).
 NIP: 2220810920, REGON: 522155974
 
 tel. 603 088 626\
-e-mail: <pkpkbud@gmail.com>
+e-mail: <pkpkbud@gmail.com
