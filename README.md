@@ -263,4 +263,4 @@ lub serwis [GitHub](https://github.com/pkpkbud/sciany/issues).
 NIP: 2220810920, REGON: 522155974
 
 tel. 603 088 626\
-e-mail: <pkpkbud@gmail.com
+e-mail: <pkpkbud@gmail.com>
