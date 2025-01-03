@@ -41,9 +41,9 @@ programu **ABC**.
 
 Wybieramy jeden z poniższych linków, aby rozpocząć pobieranie:
 
-- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.1.0/Sciany-ABC6-0.1.0-win32.msi)
-- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.1.0/Sciany-ABC6p-0.1.0-win32.msi)
-- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.1.0/Sciany-ABC6s-0.1.0-win32.msi)
+- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6-0.2.0-win32.msi)
+- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6p-0.2.0-win32.msi)
+- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6s-0.2.0-win32.msi)
 
 Moduł instalujemy w lokalizacji programu **ABC** w folderze *EXE*
 (np. *C:\ABC6\EXE*).
@@ -84,6 +84,8 @@ do projektowania ścian murowych, natomiast `zelbet.exe` uruchamia kalkulator do
 projektowania ścian żelbetowych.
 **Pierwsze uruchomienie należy wykonać z poziomu programu ABC.**
 
+![image](https://github.com/user-attachments/assets/e28004e6-35af-4dd7-b590-d9aada4b6fc4)
+
 W programach **ABC** dla podpór typu `Ściana` można zaprojektować ścianę murową
 lub żelbetową. Odpowiedni moduł uruchamia się w zależności od rodzaju podpory.
 W wynikach zadania w menu `Wymiar` dostępna jest opcja `Projektowanie ściany`.
@@ -101,7 +103,7 @@ Obwiednia generalnie będzie obliczana jako `Automat EN`, chyba, że są zdefini
 własne kombinacje wg PN-EN, to wtedy będzie można je wybrać. Przycisk `Usuń` usuwa
 wcześniej zadane miejsca.
 
-![image](https://github.com/user-attachments/assets/6c57c81c-1ca4-4cc6-96f7-b5046650ef93)
+![image](https://github.com/user-attachments/assets/ffbf5d0d-0e3a-485d-86ea-5c49da33e798)
 
 ### Wybór miejsca
 
@@ -114,7 +116,7 @@ skupionym.
 
 ### Usztywnienia
 
-![image](https://github.com/user-attachments/assets/bcfc7d46-7404-4348-9517-427d1b6683bf)
+![image](https://github.com/user-attachments/assets/2e0d0f91-0566-4a31-9d49-14fa1edc07ec)
 
 W oknie można wybrać dla każdego z węzłów czy jego krawędź pionowa jest `Podparta`
 czy `Swobodna`. Wybór ten ma wpływ na wysokość efektywną ściany i wartości momentów
@@ -127,16 +129,30 @@ Opcja `Ściana obciążona siłą skupioną` pozwala na sprawdzenie wybranego ob
 
 ### Projektowanie
 
-![image](https://github.com/user-attachments/assets/76cde767-dee1-4ea0-8339-b02beffa528e)
-
 Po wprowadzeniu danych na pierwszej planszy można przyciskiem `OK` przejść do planszy
-głównej modułu. Na niej przeprowadzane jest całe projektowanie. Składa się z opisanych
-poniżej elementów.
+głównej modułu. Odpowiednia plansza otworzy się w zależności od zadanego materiału.
+Na niej przeprowadzane jest całe projektowanie. Składa się z opisanych poniżej elementów.
+
+![image](https://github.com/user-attachments/assets/6f62a0a0-8c08-440b-b8d6-f75c98e12cb8)
 
 **Ramki z danymi u góry**, gdzie podobnie jak na pierwszej planszy należy podać
 wartości, tym razem dotyczące przyjętych założeń projektowych, materiałów, wymiarów
 oraz obciążeń obliczeniowych. Opcja `Typowy` pozwala na wybór elementu murowego
 z listy i automatyczne uzupełnienie parametrów elementu murowego oraz ciężaru.
+
+![image](https://github.com/user-attachments/assets/822edd18-6677-4d66-9c33-02817b3bfffd)
+
+Opcja `Ściana zbrojona` pozwala na zwymiarowanie zbrojenia ściany żelbetowej na
+ściskanie ze zginaniem. Jest to rozwiązanie zalecane w przypadku, gdy zostanie
+przekroczona wartość dopuszczalnego mimośrodu. Po wybraniu tej opcji odblokuje się
+przycisk `Krzywa interakcji` w menu `Wyniki` po prawej stronie, którego włączenie
+pokazuje nośność przekroju symetrycznie zbrojonego jako zależności siły podłużnej
+do granicznego momentu gnącego. Wykres można przybliżać i oddalać za pomocą pokrętła
+myszy. Wartości na wykresie można odczytać dowolnym przyciskiem myszy. Przycisk
+`Do pliku` pozwala na zapisanie krzywej interakcji jako obrazu w formacie *.PNG*.
+
+![image](https://github.com/user-attachments/assets/d9bc39c2-4514-40f9-9ca6-b5c8c752f235)
+
 `Opis` można dowolnie modyfikować, domyślnie wpisane są numery węzłów.
 W celu policzenia ściany jako metrowego pasma ściany o nieskońcoznej długości
 należy odznaczyć opcję `Długość`. Przycisk `Wiatr` otwiera okno, gdzie po
@@ -147,7 +163,7 @@ ma zadanych usztywnień pionowych krawędzi, możemy określić inne niż długo
 ściany pasmo zbierania obciążenia od wiatru. Przycisk `Do schowka` kopiuje
 notkę z oddziaływaniem wiatru do schowka.
 
-![image](https://github.com/user-attachments/assets/8a120e6e-7b16-46b6-b7b2-434364d0e02d)
+![image](https://github.com/user-attachments/assets/ab98d01a-f211-438d-bb29-58e5c66d73b1)
 
 **Siły oraz momenty przyjmowane w module są wyliczone na podstawie obliczeń statycznych.**
 **W programie ABC należy uwzględniać ewentualne obciążenia z wyższych kondygnacji.**
@@ -156,7 +172,7 @@ można wybrać wariant z obwiedni sił. W ten sposób można zadać własną si�
 np. w przypadku obliczeń wariantu `Ściana pod obciążeniem skupionym` albo można zadać
 własne momenty gnące, np. obliczone uproszczoną metodą zgodnie z załącznikiem C normy
 *PN-EN 1996-1-1*. Przycisk `Zeruj` zeruje wszystkie podane obciążenia. Ponowne
-wciśnięcie przywraca wartości przed zerowaniem. Wymiary ściany oraz elementy murowy są
+wciśnięcie przywraca wartości przed zerowaniem. Wymiary ściany oraz materiał są
 pobierane z opisu podpory w programie **ABC** lub są przyjmowane wartości domyślne.
 
 ![image](https://github.com/user-attachments/assets/c38d01d3-4cac-40ec-a5d4-d65b59bea011)
@@ -170,7 +186,8 @@ na końcu każdego wzoru w nawiasie kwadratowym podany jest decydujący przypade
 Po najechaniu na niego kursorem myszy wyświetlone zostaną wartości sił pobrane
 z programu **ABC**. Nazwa przypadku oznacza wiodące obciążenie dla warunku.
 
-Sprawdzane są następujące warunki nośności zgodnie z normą *PN-EN 1996-1-1*:
+W przypadku konstrukcji murowych sprawdzane są następujące warunki nośności zgodnie
+z normą *PN-EN 1996-1-1*:
 - Smukłość ściany murowej zgodnie z punktem 5.5.1.4.
 - Ściana murowa niezbrojona obciążona głównie pionowo zgodnie z punktem 6.1.2
 (obciążenia pionowe u góry, dołu lub w środku wysokości ściany).
@@ -180,16 +197,44 @@ z punktem 6.3.1 (zginanie równolegle lub prostopadle do spoin wspornych).
 Jeżeli została wybrana opcja `Ściana obciążona siłą skupioną` sprawdzany jest warunek
 nośności ściany obciążonej siłą skupioną zgodnie z p. 6.1.3 normy *PN-EN 1996-1-1*:
 
-![image](https://github.com/user-attachments/assets/83fea5f0-7258-4025-90af-1074eb6af340)
+![image](https://github.com/user-attachments/assets/5ec68d97-c6ad-400c-ab4d-59e2b528a8e2)
+
+W przypadku konstrukcji z betonu sprawdzane są następujące warunki nośności zgodnie
+z normą *PN-EN 1992-1-1*:
+- Smukłość ściany zgodnie z punktem 12.6.5.1(5).
+- Nośność obliczeniowa ze względu na moment zginający i siłę podłużną zgodnie
+z punktem 12.6.1 (obciążenia pionowe u góry, dołu lub w środku wysokości ściany) lub
+w przypadku wybrania opcji `Uproszczona metoda obliczania ścian usztywnionych`
+nośność obliczeniowa sprawdzana jest w sposób uproszczony zgodnie z punktem 12.6.5.2.
+
+![image](https://github.com/user-attachments/assets/20fbf9e5-4cf2-429a-9e8e-86ac9e3d63fd)
+
+Po włączeniu opcji `Ściana zbrojona` sprawdzane są następujące warunki normowe:
+- Nośność obliczeniowa jako moment graniczny przekroju symetrycznie zbrojonego według
+wytycznych podanych w punkcie 6.1. Przyjmowany jest prostokątny rozkład naprężeń jak
+w punkcie 3.1.7(3).
+- Wymagane zbrojenie wynikające z sił wewnętrznych oraz reguł podanych w punkcie 9.6.
+Ze względów praktycznych zbrojenie przyjmowane jest jako symetryczne po obu stronach
+oraz pręty poziome są zlokalizowane bliżej powierzchni ściany niż pręty pionowe (główne).
+- Szerokość rys zgodnie z punktem 7.3.4.
+
+Podczas obliczeń wykonywana jest uproszczona analiza efektów drugiego rzędu zgodnie
+z zasadami z punktu 5.8 normy *PN-EN 1992-1-1*. Po wybraniu opcji `Automatyczny`
+sprawdzane jest kryterium smukłości elementów wydzielonych (p. 5.8.3.1). Jeżeli nie
+jest spełnione, wybierana jest jedna z metod, oparta na nominalnej sztywności lub
+oparta na nominalnej krzywiźnie, prowadząca do większych wartości momentów zginających.
+Wybranie opcji `Brak` powoduje pominięcie efektów drugiego rzędu.
 
 **Ramka przycisków po prawej** stronie zawierająca następujące funkcje: 
 - Przycisk `Oblicz` aktualizuje część z wynikami dla zadanych wartości.
 - Przycisk `Usztywnienia` otwiera ponownie wcześniej opisane okno
 [Usztywnienia](#usztywnienia).
-- Przycisk `Wczytaj` umożliwia otwarcie pliku zadania z końcówką *.MUR* w celu wczytania
-wcześniej zapisanych danych.
-- Przycisk `Zapisz` pozwala na zapisanie danych do pliku z końcówką *.MUR* w wybranej
-lokalizacji na dysku.
+- Przycisk `Wczytaj` umożliwia otwarcie pliku zadania (z końcówką *.MUR* w przypadku
+ścian murowych, *.BET* w przypadku ścian żelbetowych) w celu wczytania wcześniej
+zapisanych danych.
+- Przycisk `Zapisz` pozwala na zapisanie danych do pliku (z końcówką *.MUR* w
+przypadku ścian murowych, *.BET* w przypadku ścian żelbetowych) w wybranej lokalizacji
+na dysku.
 - Przycisk `Folder` pozwala określić domyślny folder do wczytywania i zapisywania
 plików z danymi.
 - Przycisk `Do schowka` kopiuje listę z notką obliczeniową do schowka. Po zamknięciu
@@ -197,7 +242,7 @@ modułu schowek zostaje wyczyszczony.
 - Przycisk `Do Worda` otwiera nowy dokument zawierający notkę obliczeniową. Ponowne
 naciśnięcie przycisku powoduje dopisanie wyników do otwartego dokumentu. W przypadku
 posiadania innego pakietu niż *Microsoft Office*, jest tworzony i otwierany
-nowy plik *Nazwa_zadania.MUR.DOCX* w lokalizacji zadania.
+nowy plik *Nazwa_zadania.MUR.DOCX* lub *Nazwa_zadania.BET.DOCX* w lokalizacji zadania.
 - Przycisk `Aktualizuj` sprawdza, czy jest uruchomiona aktualna wersja modułu oraz w
 razie potrzeby umożliwia pobranie i aktualizację do najnowszej wersji. Plik instalacyjny
 jest pobierany w tle, trzeba poczekać na jego pobranie. Następnie moduł jest wyłączany
