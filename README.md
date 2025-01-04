@@ -41,9 +41,9 @@ programu **ABC**.
 
 Wybieramy jeden z poniższych linków, aby rozpocząć pobieranie:
 
-- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6-0.2.0-win32.msi)
-- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6p-0.2.0-win32.msi)
-- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/0.2.0/Sciany-ABC6s-0.2.0-win32.msi)
+- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/1.0.0/Sciany-ABC6-1.0.0-win32.msi)
+- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/1.0.0/Sciany-ABC6p-1.0.0-win32.msi)
+- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/1.0.0/Sciany-ABC6s-1.0.0-win32.msi)
 
 Moduł instalujemy w lokalizacji programu **ABC** w folderze *EXE*
 (np. *C:\ABC6\EXE*).
@@ -224,6 +224,14 @@ sprawdzane jest kryterium smukłości elementów wydzielonych (p. 5.8.3.1). Jeż
 jest spełnione, wybierana jest jedna z metod, oparta na nominalnej sztywności lub
 oparta na nominalnej krzywiźnie, prowadząca do większych wartości momentów zginających.
 Wybranie opcji `Brak` powoduje pominięcie efektów drugiego rzędu.
+
+Jeżeli została wybrana opcja `Ściana obciążona siłą skupioną` sprawdzany jest warunek
+nośności ściany obciążonej miejscowo zgodnie z p. 6.7 normy *PN-EN 1992-1-1*, czyli
+nośność na docisk. W przypadku, gdy nośność ta jest przekroczona opcją `Ściana zbrojona`
+możemy zwymiarować dodatkowe zbrojenie pionowe na siły rozciągające spowodowane
+obciążeniem miejscowym:
+
+![image](https://github.com/user-attachments/assets/f59c9f9c-fa35-4618-9615-57e823ce3dfb)
 
 **Ramka przycisków po prawej** stronie zawierająca następujące funkcje: 
 - Przycisk `Oblicz` aktualizuje część z wynikami dla zadanych wartości.
