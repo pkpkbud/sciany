@@ -49,7 +49,8 @@ Moduł instalujemy w lokalizacji programu **ABC** w folderze *EXE*
 (np. *C:\ABC6\EXE*).
 
 Spis zmian oraz poprzednie wersje są dostępne w serwisie
-[GitHub](https://github.com/pkpkbud/sciany/releases).
+[GitHub](https://github.com/pkpkbud/sciany/releases)
+([mury](https://github.com/pkpkbud/mury/releases)).
 
 ```
 Moduł podlega ochronie prawa autorskiego bez udzielania jakiejkolwiek gwarancji.
