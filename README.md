@@ -41,10 +41,10 @@ programu **ABC**.
 
 Wybieramy jeden z poniższych linków, aby rozpocząć pobieranie:
 
-- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.0.0/Sciany-ABC6-2.0.0-win32.msi)
-- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.0.0/Sciany-ABC6p-2.0.0-win32.msi)
-- [Mam tylko **ABC Tarcza** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.0.0/Sciany-ABC6t-2.0.0-win32.msi)
-- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.0.0/Sciany-ABC6s-2.0.0-win32.msi)
+- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6-2.1.0-win32.msi)
+- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6p-2.1.0-win32.msi)
+- [Mam tylko **ABC Tarcza** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6t-2.1.0-win32.msi)
+- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6s-2.1.0-win32.msi)
 
 Moduł instalujemy w lokalizacji programu **ABC** w folderze *EXE*
 (np. *C:\ABC6\EXE*).
@@ -54,7 +54,16 @@ Spis zmian oraz poprzednie wersje są dostępne w serwisie
 ([mury](https://github.com/pkpkbud/mury/releases)).
 
 ```
+LICENCJA © 2024÷2025 PKPKBUD
+============================
 Moduł podlega ochronie prawa autorskiego bez udzielania jakiejkolwiek gwarancji.
+Podczas jego tworzenia, autor posługiwał się aktualnymi normami z biblioteki PKN,
+poprzez Portal Polskiej Izby Inżynierów Budownictwa oraz literaturą techniczną,
+spośród której olbrzymim wsparciem były książki: prof. dr hab. inż. Łukasza Drobca pt.
+"Konstrukcje murowe według Eurokodu 6 i norm związanych" (wyd. I) oraz prof. dr hab. inż.
+Michała Knauffa pt. "Obliczanie konstrukcji żelbetowych według Eurokodu 2" (wyd. I).
+Moduł korzysta z bibliotek na otwartych licencjach typu: PSFL, BSD-3, Apache 2.0, MIT,
+takich jak: cryptography, cx-Freeze, matplotlib, numpy, Pillow, python-docx, pywin32.
 Jest sprzedawany jako narzędzie do wsparcia zarobkowego procesu projektowego.
 Jest dostarczany "taki jaki jest" i nie ma gwarancji, że jest wolny od błędów pomimo
 dołożenia wszelkich starań. Autor modułu nie ponosi odpowiedzialności za skutki powstałe
@@ -112,9 +121,8 @@ wcześniej zadane miejsca.
 Po zatwierdzeniu obciążeń plansza zostanie zamknięta i pokaże się rysunek modelu.
 Pojawią się podpory liniowe typu `Ściana`, należy wybrać dwa skrajne węzły
 projektowanego miejsca. Punkty należy wybierać między innymi ścianami, między ścianą
-i otworem lub pomiędzy otworami. Alternatywnie, w przypadku muru, można wybrać dowolne
-punkty na długości ściany w celu sprawdzenia wybranego obszaru ściany pod obciążeniem
-skupionym.
+i otworem lub pomiędzy otworami. Alternatywnie, można wybrać dowolne punkty na długości
+ściany w celu sprawdzenia wybranego obszaru ściany pod obciążeniem skupionym.
 
 ### Usztywnienia
 
@@ -135,14 +143,22 @@ Po wprowadzeniu danych na pierwszej planszy można przyciskiem `OK` przejść do
 głównej modułu. Odpowiednia plansza otworzy się w zależności od zadanego materiału.
 Na niej przeprowadzane jest całe projektowanie. Składa się z opisanych poniżej elementów.
 
-![image](https://github.com/user-attachments/assets/6f62a0a0-8c08-440b-b8d6-f75c98e12cb8)
+#### Plansza projektowania ściany murowej:
+
+![image](https://github.com/user-attachments/assets/b7d8a522-dc4f-4312-b8a7-023965644276)
 
 **Ramki z danymi u góry**, gdzie podobnie jak na pierwszej planszy należy podać
 wartości, tym razem dotyczące przyjętych założeń projektowych, materiałów, wymiarów
 oraz obciążeń obliczeniowych. Opcja `Typowy` pozwala na wybór elementu murowego
 z listy i automatyczne uzupełnienie parametrów elementu murowego oraz ciężaru.
+Przycisk `Warunki pożarowe` otwiera okno, gdzie można sprawdzić i zastosować minimalną
+grubość ściany metodą tabelaryczną normy PN-EN 1996-1-2/AC (załącznik B).
 
-![image](https://github.com/user-attachments/assets/822edd18-6677-4d66-9c33-02817b3bfffd)
+![image](https://github.com/user-attachments/assets/2e1e48cc-9f9c-42ef-ac1a-ed70f8cb2093)
+
+#### Plansza projektowania ściany żelbetowej:
+
+![image](https://github.com/user-attachments/assets/abf53cb8-dcba-4c27-92f2-78a2695dc07e)
 
 Opcja `Ściana zbrojona` pozwala na zwymiarowanie zbrojenia ściany żelbetowej na
 ściskanie ze zginaniem. Jest to rozwiązanie zalecane w przypadku, gdy zostanie
@@ -155,8 +171,19 @@ myszy. Wartości na wykresie można odczytać dowolnym przyciskiem myszy. Przyci
 
 ![image](https://github.com/user-attachments/assets/d9bc39c2-4514-40f9-9ca6-b5c8c752f235)
 
+Przycisk `Warunki pożarowe` otwiera okno, gdzie można sprawdzić i zastosować minimalną
+grubość ściany oraz otulinę zbrojenia metodą tabelaryczną normy PN-EN 1992-1-2 (p. 5.4.2).
+
+![image](https://github.com/user-attachments/assets/65689cd8-06c5-423d-9018-c6b14ecb8c0c)
+
+Przycisk `Obliczenie otulenia` otwiera okno, gdzie można sprawdzić i zastosować
+nominalne otulenie betonem zbrojenia wg p. 4.4.1 normy PN-EN 1992-1-1 oraz
+klasę betonu ze względu na trwałość wg załącznika E normy PN-EN 1992-1-1.
+
+![image](https://github.com/user-attachments/assets/20dfea5e-05e1-4aec-b846-e3de466347f0)
+
 `Opis` można dowolnie modyfikować, domyślnie wpisane są numery węzłów.
-W celu policzenia ściany jako metrowego pasma ściany o nieskońcoznej długości
+W celu policzenia ściany jako metrowego pasma ściany o nieskończonej długości
 należy odznaczyć opcję `Długość`. Przycisk `Wiatr` otwiera okno, gdzie po
 wprowadzeniu danych dotyczących lokalizacji oraz obiektu budowlanego,
 oddziaływanie wiatru według normy *PN-EN 1991-1-4* zostaje wprowadzone jako
@@ -176,8 +203,12 @@ własne momenty gnące, np. obliczone uproszczoną metodą zgodnie z załącznik
 *PN-EN 1996-1-1*. Przycisk `Zeruj` zeruje wszystkie podane obciążenia. Ponowne
 wciśnięcie przywraca wartości przed zerowaniem. Wymiary ściany oraz materiał są
 pobierane z opisu podpory w programie **ABC** lub są przyjmowane wartości domyślne.
+Jeżeli podczas definiowania podpory zostanie wybrana opcja `Przegub u góry`
+(bez ściany NAD) lub gdy mimośród od obciążeń jest większy niż 0,45 grubości ściany,
+przyjmuje się przegubową pracę połączenia ściana-strop i zakłada nie większy niż
+0,1 grubości ściany mimośród według (5) załącznika C normy 1996-1-1.
 
-![image](https://github.com/user-attachments/assets/c38d01d3-4cac-40ec-a5d4-d65b59bea011)
+![image](https://github.com/user-attachments/assets/755e5369-8c62-4e70-a26f-57640c40c243)
 
 **Ramka z wynikami u dołu**, która aktualizuje się po zmianie wartości parametrów
 lub po naciśnięciu przycisku `Oblicz`. Każda linijka zawiera opis sprawdzanego warunku,
@@ -192,14 +223,24 @@ W przypadku konstrukcji murowych sprawdzane są następujące warunki nośności
 z normą *PN-EN 1996-1-1*:
 - Smukłość ściany murowej zgodnie z punktem 5.5.1.4.
 - Ściana murowa niezbrojona obciążona głównie pionowo zgodnie z punktem 6.1.2
-(obciążenia pionowe u góry, dołu lub w środku wysokości ściany).
+(obciążenia pionowe u góry, dołu lub w środku wysokości ściany) lub w przypadku
+wybrania opcji `Uproszczona metoda obliczania ścian usztywnionych` nośność obliczeniowa
+sprawdzana jest w sposób uproszczony, metodą podaną w załączniku A normy PN-EN 1996-3.
+Aby skorzystać z metody uproszczonej muszą zostać spełnione warunki:
+    - wysokość budynku nie przekracza 3 kondygnacji nadziemnych,
+    - ściany są usztywnione w kierunku poziomym za pomocą stropów i dachu,
+    - stropy i dach opierają się na ≥ 2/3 grubości ściany i nie mniej niż 85 mm,
+    - wysokość kondygnacji w świetle nie przekracza 3,0 m,
+    - minimalna długość ściany wynosi ≥ 1/3 jej wysokości,
+    - obciążenie charakterysytczne zmienne na stropie i dachu poniżej 5,0 kN/m²,
+    - maksymalna rozpiętość stropu i dachu w świetle wynosi 6,0 m.
 - Ściana murowa niezbrojona obciążona prostopadle do swojej powierzchni zgodnie
 z punktem 6.3.1 (zginanie równolegle lub prostopadle do spoin wspornych).
 
 Jeżeli została wybrana opcja `Ściana obciążona siłą skupioną` sprawdzany jest warunek
 nośności ściany obciążonej siłą skupioną zgodnie z p. 6.1.3 normy *PN-EN 1996-1-1*:
 
-![image](https://github.com/user-attachments/assets/5ec68d97-c6ad-400c-ab4d-59e2b528a8e2)
+![image](https://github.com/user-attachments/assets/5e0aa8ae-c4a0-477d-9fba-803553576f33)
 
 W przypadku konstrukcji z betonu sprawdzane są następujące warunki nośności zgodnie
 z normą *PN-EN 1992-1-1*:
@@ -209,7 +250,7 @@ z punktem 12.6.1 (obciążenia pionowe u góry, dołu lub w środku wysokości �
 w przypadku wybrania opcji `Uproszczona metoda obliczania ścian usztywnionych`
 nośność obliczeniowa sprawdzana jest w sposób uproszczony zgodnie z punktem 12.6.5.2.
 
-![image](https://github.com/user-attachments/assets/20fbf9e5-4cf2-429a-9e8e-86ac9e3d63fd)
+![image](https://github.com/user-attachments/assets/08e81137-74a7-44fb-a669-48198fc0316d)
 
 Po włączeniu opcji `Ściana zbrojona` sprawdzane są następujące warunki normowe:
 - Nośność obliczeniowa jako moment graniczny przekroju symetrycznie zbrojonego według
@@ -233,7 +274,7 @@ nośność na docisk. W przypadku, gdy nośność ta jest przekroczona opcją `�
 możemy zwymiarować dodatkowe zbrojenie pionowe na siły rozciągające spowodowane
 obciążeniem miejscowym:
 
-![image](https://github.com/user-attachments/assets/f59c9f9c-fa35-4618-9615-57e823ce3dfb)
+![image](https://github.com/user-attachments/assets/2d3eb9ed-a2b8-4fa4-8560-433344b2f50d)
 
 **Ramka przycisków po prawej** stronie zawierająca następujące funkcje: 
 - Przycisk `Oblicz` aktualizuje część z wynikami dla zadanych wartości.
@@ -257,10 +298,12 @@ nowy plik *Nazwa_zadania.MUR.DOCX* lub *Nazwa_zadania.BET.DOCX* w lokalizacji za
 razie potrzeby umożliwia pobranie i aktualizację do najnowszej wersji. Plik instalacyjny
 jest pobierany w tle, trzeba poczekać na jego pobranie. Następnie moduł jest wyłączany
 i uruchamia się instalacja. Zaleca się zamknięcie programu **ABC** przed instalacją.
+Pomarańczowy kolor czcionki przycisku sygnalizuje, że jest dostępna aktualizacja.
+- Przycisk `Instrukcja` otwiera niniejszą stronę internetową z instrukcją modułu.
 - Przycisk `Zamknij` zapisuje wyniki i zamyka moduł, skąd można przejść do wyboru
 kolejnego miejsca.
 - Przełączanie opcji `Zawsze na wierzchu` powoduje przypięcie lub odpięcie modułu ponad
-innymi oknami.
+innymi oknami (domyślnie włączony przy uruchamianiu z programu **ABC**).
 - Zaznaczenie opcji `Domyślne` powoduje, że po zamknięciu modułu bieżące ustawienia
 zostają zapisane jako domyślne do wymiarowania kolejnych miejsc.
 
