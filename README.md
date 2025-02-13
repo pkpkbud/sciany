@@ -41,10 +41,10 @@ programu **ABC**.
 
 Wybieramy jeden z poniższych linków, aby rozpocząć pobieranie:
 
-- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6-2.1.0-win32.msi)
-- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6p-2.1.0-win32.msi)
-- [Mam tylko **ABC Tarcza** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6t-2.1.0-win32.msi)
-- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/2.1.0/Sciany-ABC6s-2.1.0-win32.msi)
+- [Mam kilka programów **ABC** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/3.0.0/Sciany-ABC6-3.0.0-win32.msi)
+- [Mam tylko **ABC Płyta** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/3.0.0/Sciany-ABC6p-3.0.0-win32.msi)
+- [Mam tylko **ABC Tarcza** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/3.0.0/Sciany-ABC6t-3.0.0-win32.msi)
+- [Mam tylko **ABC Obiekt3D** na kluczu USB](https://github.com/pkpkbud/sciany/releases/download/3.0.0/Sciany-ABC6s-3.0.0-win32.msi)
 
 Moduł instalujemy w lokalizacji programu **ABC** w folderze *EXE*
 (np. *C:\ABC6\EXE*).
@@ -158,18 +158,24 @@ grubość ściany metodą tabelaryczną normy PN-EN 1996-1-2/AC (załącznik B).
 
 #### Plansza projektowania ściany żelbetowej:
 
-![image](https://github.com/user-attachments/assets/abf53cb8-dcba-4c27-92f2-78a2695dc07e)
+![image](https://github.com/user-attachments/assets/496ee27c-86f5-458c-8172-d658de044cda)
 
 Opcja `Ściana zbrojona` pozwala na zwymiarowanie zbrojenia ściany żelbetowej na
 ściskanie ze zginaniem. Jest to rozwiązanie zalecane w przypadku, gdy zostanie
 przekroczona wartość dopuszczalnego mimośrodu. Po wybraniu tej opcji odblokuje się
-przycisk `Krzywa interakcji` w menu `Wyniki` po prawej stronie, którego włączenie
-pokazuje nośność przekroju symetrycznie zbrojonego jako zależności siły podłużnej
-do granicznego momentu gnącego. Wykres można przybliżać i oddalać za pomocą pokrętła
+menu `Klasa szczelności`, który pozwala na ograniczenie stanu zarysowania ze względu
+na szczelność wg PN-EN 1992-3. W przypadku projektowania ściany w techologii tzw.
+"białej wanny" zaleca się wybrać klasę szczelności "1" lub "2", dla których szerokość
+rysy ogranicza się w zależności od wysokości parcia hydrostatycznego (0,05 ÷ 0,20 mm).
+W przypadku wybrania klasy szczelności "2" dodatkowo sprawdzane jest ograniczenie
+zasięgu strefy ściskanej, aby wykluczyć powstawnie rys na całej wysokości przekroju.
+Przycisk `Krzywa interakcji` w menu `Wyniki` po prawej stronie pozwala na pokazanie
+nośności przekroju symetrycznie zbrojonego jako zależności siły podłużnej do
+granicznego momentu gnącego. Wykres można przybliżać i oddalać za pomocą pokrętła
 myszy. Wartości na wykresie można odczytać dowolnym przyciskiem myszy. Przycisk
 `Do pliku` pozwala na zapisanie krzywej interakcji jako obrazu w formacie *.PNG*.
 
-![image](https://github.com/user-attachments/assets/d9bc39c2-4514-40f9-9ca6-b5c8c752f235)
+![image](https://github.com/user-attachments/assets/0ff2b782-7125-4866-ab31-e15714bbeed4)
 
 Przycisk `Warunki pożarowe` otwiera okno, gdzie można sprawdzić i zastosować minimalną
 grubość ściany oraz otulinę zbrojenia metodą tabelaryczną normy PN-EN 1992-1-2 (p. 5.4.2).
@@ -186,13 +192,13 @@ klasę betonu ze względu na trwałość wg załącznika E normy PN-EN 1992-1-1.
 W celu policzenia ściany jako metrowego pasma ściany o nieskończonej długości
 należy odznaczyć opcję `Długość`. Przycisk `Wiatr` otwiera okno, gdzie po
 wprowadzeniu danych dotyczących lokalizacji oraz obiektu budowlanego,
-oddziaływanie wiatru według normy *PN-EN 1991-1-4* zostaje wprowadzone jako
+oddziaływanie wiatru według normy *PN-EN 1991-1-4* można wprowadzić jako
 obciążenie prostopadłe do powierzchni. Jeżeli jest zadana długość ściany i nie
 ma zadanych usztywnień pionowych krawędzi, możemy określić inne niż długość
 ściany pasmo zbierania obciążenia od wiatru. Przycisk `Do schowka` kopiuje
 notkę z oddziaływaniem wiatru do schowka.
 
-![image](https://github.com/user-attachments/assets/ab98d01a-f211-438d-bb29-58e5c66d73b1)
+![image](https://github.com/user-attachments/assets/fae765f2-57f8-4d8c-a230-f6191d24a605)
 
 **Siły oraz momenty przyjmowane w module są wyliczone na podstawie obliczeń statycznych.**
 **W programie ABC należy uwzględniać ewentualne obciążenia z wyższych kondygnacji.**
@@ -250,7 +256,7 @@ z punktem 12.6.1 (obciążenia pionowe u góry, dołu lub w środku wysokości �
 w przypadku wybrania opcji `Uproszczona metoda obliczania ścian usztywnionych`
 nośność obliczeniowa sprawdzana jest w sposób uproszczony zgodnie z punktem 12.6.5.2.
 
-![image](https://github.com/user-attachments/assets/08e81137-74a7-44fb-a669-48198fc0316d)
+![image](https://github.com/user-attachments/assets/8fe20854-bbb6-45dc-91aa-cf43016e972c)
 
 Po włączeniu opcji `Ściana zbrojona` sprawdzane są następujące warunki normowe:
 - Nośność obliczeniowa jako moment graniczny przekroju symetrycznie zbrojonego według
@@ -259,7 +265,8 @@ w punkcie 3.1.7(3).
 - Wymagane zbrojenie wynikające z sił wewnętrznych oraz reguł podanych w punkcie 9.6.
 Ze względów praktycznych zbrojenie przyjmowane jest jako symetryczne po obu stronach
 oraz pręty poziome są zlokalizowane bliżej powierzchni ściany niż pręty pionowe (główne).
-- Szerokość rys zgodnie z punktem 7.3.4.
+- Szerokość rys zgodnie z punktem 7.3. normy PN-EN 1992-1-1 wraz z uzupełnieniem
+tego punktu z normy PN-EN 1992-3
 
 Podczas obliczeń wykonywana jest uproszczona analiza efektów drugiego rzędu zgodnie
 z zasadami z punktu 5.8 normy *PN-EN 1992-1-1*. Po wybraniu opcji `Automatyczny`
@@ -274,7 +281,7 @@ nośność na docisk. W przypadku, gdy nośność ta jest przekroczona opcją `�
 możemy zwymiarować dodatkowe zbrojenie pionowe na siły rozciągające spowodowane
 obciążeniem miejscowym:
 
-![image](https://github.com/user-attachments/assets/2d3eb9ed-a2b8-4fa4-8560-433344b2f50d)
+![image](https://github.com/user-attachments/assets/9539c85d-98b4-4a99-89da-6f7cd2df0779)
 
 **Ramka przycisków po prawej** stronie zawierająca następujące funkcje: 
 - Przycisk `Oblicz` aktualizuje część z wynikami dla zadanych wartości.
