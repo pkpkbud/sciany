@@ -78,6 +78,8 @@ na przetwarzanie udostępnionych danych osobowych w celu obsługi zakupu licencj
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4C1No9RfA6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/luqXvd_8IM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Instrukcja
 
 Podczas korzystania z modułu, można uzyskać wskazówki dotyczące danej funkcji po
@@ -145,7 +147,7 @@ Na niej przeprowadzane jest całe projektowanie. Składa się z opisanych poniż
 
 #### Plansza projektowania ściany murowej:
 
-![image](https://github.com/user-attachments/assets/b7d8a522-dc4f-4312-b8a7-023965644276)
+![image](https://github.com/user-attachments/assets/d3d59ed1-6e36-4cf4-88cb-fcd026485c82)
 
 **Ramki z danymi u góry**, gdzie podobnie jak na pierwszej planszy należy podać
 wartości, tym razem dotyczące przyjętych założeń projektowych, materiałów, wymiarów
@@ -158,7 +160,7 @@ grubość ściany metodą tabelaryczną normy PN-EN 1996-1-2/AC (załącznik B).
 
 #### Plansza projektowania ściany żelbetowej:
 
-![image](https://github.com/user-attachments/assets/496ee27c-86f5-458c-8172-d658de044cda)
+![image](https://github.com/user-attachments/assets/e9c9e2e1-c042-45dc-9c9c-7af2d76b33cd)
 
 Opcja `Ściana zbrojona` pozwala na zwymiarowanie zbrojenia ściany żelbetowej na
 ściskanie ze zginaniem. Jest to rozwiązanie zalecane w przypadku, gdy zostanie
@@ -166,7 +168,7 @@ przekroczona wartość dopuszczalnego mimośrodu. Po wybraniu tej opcji odblokuj
 menu `Klasa szczelności`, który pozwala na ograniczenie stanu zarysowania ze względu
 na szczelność wg PN-EN 1992-3. W przypadku projektowania ściany w techologii tzw.
 "białej wanny" zaleca się wybrać klasę szczelności "1" lub "2", dla których szerokość
-rysy ogranicza się w zależności od wysokości parcia hydrostatycznego (0,05 ÷ 0,20 mm).
+rysy ogranicza się w zależności od wysokości parcia hydrostatycznego (0,05÷0,20 mm).
 W przypadku wybrania klasy szczelności "2" dodatkowo sprawdzane jest ograniczenie
 zasięgu strefy ściskanej, aby wykluczyć powstawnie rys na całej wysokości przekroju.
 Przycisk `Krzywa interakcji` w menu `Wyniki` po prawej stronie pozwala na pokazanie
@@ -198,7 +200,17 @@ ma zadanych usztywnień pionowych krawędzi, możemy określić inne niż długo
 ściany pasmo zbierania obciążenia od wiatru. Przycisk `Do schowka` kopiuje
 notkę z oddziaływaniem wiatru do schowka.
 
-![image](https://github.com/user-attachments/assets/fae765f2-57f8-4d8c-a230-f6191d24a605)
+![image](https://github.com/user-attachments/assets/f47d0198-ea07-47cb-84ef-68b4e7ae306c)
+
+Przycisk `Grunt / Woda` pozwala na zaprojektowanie ścian obciążonych parciem gruntu
+i wody prostopadle do swojej powierzchni. Po naciśnięciu otwiera się okno, gdzie można
+podać dane gruntu zasypowego, obciążenie obliczeniowe naziomu oraz wysokość parcia
+hydrostatycznego (np. poziom zwierciadła gruntowego). Współczynnik parcia gruntu
+obliczany jest według normy *PN-B-03010*. Dodatkowe momenty gnące od parcia gruntu
+i wody zostaną uwzględnione przy sprawdzaniu nośności na zginanie. Przycisk `Do schowka`
+kopiuje notkę z parciem gruntu i wody do schowka.
+
+![image](https://github.com/user-attachments/assets/bfb17de4-fe57-4ecb-97ca-082223fa2c69)
 
 **Siły oraz momenty przyjmowane w module są wyliczone na podstawie obliczeń statycznych.**
 **W programie ABC należy uwzględniać ewentualne obciążenia z wyższych kondygnacji.**
@@ -256,7 +268,7 @@ z punktem 12.6.1 (obciążenia pionowe u góry, dołu lub w środku wysokości �
 w przypadku wybrania opcji `Uproszczona metoda obliczania ścian usztywnionych`
 nośność obliczeniowa sprawdzana jest w sposób uproszczony zgodnie z punktem 12.6.5.2.
 
-![image](https://github.com/user-attachments/assets/8fe20854-bbb6-45dc-91aa-cf43016e972c)
+![image](https://github.com/user-attachments/assets/528ec12e-e8cd-4d71-bcb0-1b4b777fa8bd)
 
 Po włączeniu opcji `Ściana zbrojona` sprawdzane są następujące warunki normowe:
 - Nośność obliczeniowa jako moment graniczny przekroju symetrycznie zbrojonego według
