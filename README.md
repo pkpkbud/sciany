@@ -205,10 +205,11 @@ notkę z oddziaływaniem wiatru do schowka.
 Przycisk `Grunt / Woda` pozwala na zaprojektowanie ścian obciążonych parciem gruntu
 i wody prostopadle do swojej powierzchni. Po naciśnięciu otwiera się okno, gdzie można
 podać dane gruntu zasypowego, obciążenie obliczeniowe naziomu oraz wysokość parcia
-hydrostatycznego (np. poziom zwierciadła gruntowego). Współczynnik parcia gruntu
+hydrostatycznego (np. poziom wody gruntowej). Współczynnik parcia gruntu
 obliczany jest według normy *PN-B-03010*. Dodatkowe momenty gnące od parcia gruntu
 i wody zostaną uwzględnione przy sprawdzaniu nośności na zginanie. Przycisk `Do schowka`
-kopiuje notkę z parciem gruntu i wody do schowka.
+kopiuje notkę do schowka, natomiast `Zeruj` zeruje podane wysokości i obciążenie.
+Ponowne wciśnięcie przywraca wartości przed zerowaniem.
 
 ![image](https://github.com/user-attachments/assets/bfb17de4-fe57-4ecb-97ca-082223fa2c69)
 
