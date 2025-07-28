@@ -147,7 +147,7 @@ Na niej przeprowadzane jest całe projektowanie. Składa się z opisanych poniż
 
 #### Plansza projektowania ściany murowej:
 
-![image](https://github.com/user-attachments/assets/d3d59ed1-6e36-4cf4-88cb-fcd026485c82)
+![image](https://github.com/user-attachments/assets/a52f1368-bb8d-4456-9acc-ddcda605281e)
 
 **Ramki z danymi u góry**, gdzie podobnie jak na pierwszej planszy należy podać
 wartości, tym razem dotyczące przyjętych założeń projektowych, materiałów, wymiarów
