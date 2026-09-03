@@ -1,4 +1,4 @@
-# Ściany murowe i żelbetowe w ABC
+# Ściany murowe i żelbetowe
 
 [Zakup](#zakup) | [Instalacja](#instalacja) | [Wideo](#wideo) | [Instrukcja](#instrukcja) | [Kontakt](#kontakt)
 
